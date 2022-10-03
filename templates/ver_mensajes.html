@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block Titulo %}                    
+  <h1 class="fw-bolder mb-1">Ver mensajes</h1>                        
+{% endblock %}     
+
+
+
+
+{% block contenido %}
+        {% if mensajes %}
+                {% for i in mensajes %}
+                
+             <li>  {{i}} </li>  
+                  
+                {% endfor %}
+        {% else %}
+                <h3> NO SE ENCONTRARON MENSAJES </h3>
+        {% endif %}
+{% endblock %}

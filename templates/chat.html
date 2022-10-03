@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block Titulo %}                    
+  <h1 class="fw-bolder mb-1">Template de los Mensajes</h1>                        
+{% endblock %}     
+
+{% block botones_chat %}
+<li class="nav-item"><a class="nav-link" href="{% url 'escribir_mensajes' %}">Escribi tu mensaje</a></li>
+<li class="nav-item"><a class="nav-link" href="{% url 'ver_mensajes' %}">Ver mensajes</a></li>
+ {% endblock %}
+ 
